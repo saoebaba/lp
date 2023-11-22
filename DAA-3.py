@@ -1,7 +1,7 @@
 def fractional_knapsack():
-    weights = [10, 20, 30]
-    values = [60, 100, 120]
-    capacity = 50
+    weights = [5,10,15,22,25]
+    values = [30,40,45,77,90]
+    capacity = 60
     res = 0
 
     for pair in sorted(zip(weights, values), key=lambda x: x[1] / x[0], reverse=True):
