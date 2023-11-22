@@ -1,7 +1,7 @@
 def solve_knapsack():
-    val = [12,45,60,13] 
-    wt = [5,3,2,10] 
-    W = 22
+    val = [10,10,12,18] 
+    wt = [2,4,6,9] 
+    W = 15
     n = len(val) - 1
     def knapsack(W, n): 
     
