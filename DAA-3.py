@@ -13,7 +13,7 @@ def fractional_knapsack():
         elif pair[0] <= capacity: 
             res += pair[1]
             capacity -= pair[0]
-        print(res)
+    print(f'Total profit : {res}')
 
 
 if __name__ == "__main__":
