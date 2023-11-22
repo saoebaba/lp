@@ -1,7 +1,7 @@
 def solve_knapsack():
-    val = [50, 100, 150, 200] 
-    wt = [8, 16, 32, 40] 
-    W = 64
+    val = [12,45,60,13] 
+    wt = [5,3,2,10] 
+    W = 22
     n = len(val) - 1
     def knapsack(W, n): 
     
@@ -12,5 +12,5 @@ def solve_knapsack():
              return knapsack(W, n - 1)
          else:
             return max(val[n] + knapsack(W - wt[n], n - 1), knapsack(W, n - 1))
-    print(knapsack(W, n))
+    print(f'Maximumu value of item that can be carried : {knapsack(W, n)}')
 solve_knapsack()
